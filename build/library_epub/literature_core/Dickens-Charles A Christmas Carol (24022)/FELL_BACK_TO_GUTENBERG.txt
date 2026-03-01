@@ -1,0 +1,4 @@
+Standard Ebooks download was rate-limited; used Gutenberg EPUB instead.
+standardebooks_url=https://standardebooks.org/ebooks/charles-dickens/a-christmas-carol/downloads/charles-dickens_a-christmas-carol.epub?source=feed
+standardebooks_error=HTTPError: 429/5xx after 2 retries
+gutenberg_url=https://www.gutenberg.org/ebooks/24022.epub3.images

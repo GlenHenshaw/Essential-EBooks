@@ -1,0 +1,4 @@
+Standard Ebooks download was rate-limited; used Gutenberg EPUB instead.
+standardebooks_url=https://standardebooks.org/ebooks/l-m-montgomery/anne-of-green-gables/downloads/l-m-montgomery_anne-of-green-gables.epub?source=feed
+standardebooks_error=HTTPError: 429/5xx after 2 retries
+gutenberg_url=https://www.gutenberg.org/ebooks/64365.epub3.images
