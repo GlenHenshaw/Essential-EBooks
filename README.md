@@ -9,7 +9,7 @@ This script builds a curated (~700 book by default), English-language EPUB libra
 
 It prefers Standard Ebooks editions when available and falls back to Project Gutenberg via the Gutendex API.
 
-⸻
+-----
 
 Design Goals
    *	Fewer, higher-quality works
@@ -19,7 +19,7 @@ Design Goals
    *	Deduplicate across sources (Gutenberg vs SE)
    *	Re-runnable yearly as new works enter public domain
 
-⸻
+-----
 
 Features
 
@@ -48,7 +48,7 @@ language_rhetoric_misc
 
 Pinned canonical works (e.g., Bible, Augustine, Aquinas, Bhagavad Gita, etc.) are protected from trimming.
 
-⸻
+-----
 
 2. Standard Ebooks Preference
 
@@ -86,7 +86,7 @@ Folder format:
 lastname-firstname Title (SEBULK-<stable_id>)
 ```
 
-⸻
+-----
 
 4. Intelligent Deduplication
 
@@ -110,7 +110,7 @@ Deletion leaves:
 DUPLICATE_OF.txt
 ```
 
-⸻
+-----
 
 5. Clean Directory Structure
 
@@ -130,7 +130,7 @@ literature_core/
         austen-jane_pride-and-prejudice.epub
 ```
 
-⸻
+-----
 
 Installation
 
@@ -142,7 +142,7 @@ Install dependencies:
 pip install requests lxml rapidfuzz tqdm
 ```
 
-⸻
+-----
 
 Basic Usage
 
@@ -152,7 +152,7 @@ Build + Download Default Library (~700 books)
 python3 downloader.py
 ```
 
-⸻
+-----
 
 Build Manifest Only (No Downloads)
 
@@ -167,7 +167,7 @@ build/candidate_pool.csv
 build/final_selection.csv
 ```
 
-⸻
+-----
 
 Download Only (Using Existing Manifest)
 
@@ -175,7 +175,7 @@ Download Only (Using Existing Manifest)
 python3 downloader.py --download-only
 ```
 
-⸻
+-----
 
 Standard Ebooks Bulk Import
 
@@ -196,7 +196,7 @@ python3 downloader.py \
   --import-only
 ```
 
-⸻
+-----
 
 Deduplication
 
@@ -222,7 +222,7 @@ Dedupe pass2 metadata keys: ok=819 missing=0 groups=776
 Deduped: scanned=941 unique=776 removed=165
 ```
 
-⸻
+-----
 
 Customizing the Library
 
@@ -234,7 +234,7 @@ You can modify:
 
 The script is deterministic given the same upstream catalogs and configuration.
 
-⸻
+-----
 
 Output Structure
 
@@ -250,7 +250,7 @@ build/
                 DUPLICATE_OF.txt (if deduped)
 ```
 
-⸻
+-----
 
 Philosophy
 
@@ -265,7 +265,7 @@ It intentionally favors:
    *	International breadth (within English translation)
    *	Standard Ebooks typography when available
 
-⸻
+-----
 
 Limitations
    *	English only
@@ -273,7 +273,7 @@ Limitations
    *	Standard Ebooks API endpoints may rate-limit
    *	Metadata dedupe is heuristic (though conservative)
 
-⸻
+-----
 
 License
 
